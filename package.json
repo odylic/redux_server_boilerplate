@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ./server/server.js",
+    "build": "webpack --watch",
+    "test": "jest --verbose"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,30 @@
   "bugs": {
     "url": "https://github.com/odylic/redux_server_boilerplate/issues"
   },
-  "homepage": "https://github.com/odylic/redux_server_boilerplate#readme"
+  "homepage": "https://github.com/odylic/redux_server_boilerplate#readme",
+  "dependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.9",
+    "@babel/preset-react": "^7.14.5",
+    "@reduxjs/toolkit": "^1.6.1",
+    "babel-loader": "^8.2.2",
+    "babel-polyfill": "^6.26.0",
+    "css-loader": "^6.2.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "node-sass": "^6.0.1",
+    "path": "^0.12.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.1.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.47.1",
+    "webpack-cli": "^4.7.2"
+  }
 }
